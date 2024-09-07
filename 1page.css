@@ -1,0 +1,165 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen hero section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 0 10px rgba(54, 112, 9, 0.8), 
+                     0 0 20px rgba(255, 0, 0, 0.6), 
+                     0 0 30px rgba(217, 255, 0, 0.4), 
+                     0 0 40px rgba(28, 12, 201, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(54, 112, 9, 1), 
+                     0 0 40px rgba(255, 0, 0, 1), 
+                     0 0 60px rgba(217, 255, 0, 1), 
+                     0 0 80px rgba(28, 12, 201, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(54, 112, 9, 0.8), 
+                     0 0 20px rgba(255, 0, 0, 0.6), 
+                     0 0 30px rgba(217, 255, 0, 0.4), 
+                     0 0 40px rgba(28, 12, 201, 0.2);
+    }
+}
+
+h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px;  
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    
+    
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;  
+    font-style: normal;  
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+
+    /* Initial glowing effect */
+    text-shadow: 0 0 10px rgba(54, 112, 9, 0.8), 
+                 0 0 20px rgba(255, 0, 0, 0.6), 
+                 0 0 30px rgba(217, 255, 0, 0.4), 
+                 0 0 40px rgba(28, 12, 201, 0.2);
+
+    /* Pulsating animation */
+    animation: pulsate 2s infinite;
+}
+
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* button */
+.btn1 {
+    margin: 100px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .btn1::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ebe5e5;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .btn1::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn1:hover::before {
+    opacity: 1;
+  }
+  
+  .btn1:active:after {
+    background: transparent;
+  }
+  
+  .btn1:active {
+    color: #000;
+    font-weight: bold;
+  }
+  
