@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #cf1919;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.guild-info {
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+    background: linear-gradient(135deg, #ffeb3b, #f44336, #2196f3);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.guild-info h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.guild-info form {
+    display: grid;
+    gap: 10px;
+}
+
+.guild-info label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.guild-info input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.guild-info button {
+    padding: 8px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.guild-info button:hover {
+    background-color: #0056b3;
+}

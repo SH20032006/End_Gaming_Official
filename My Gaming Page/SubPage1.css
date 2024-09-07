@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/oooooooo.jpg') no-repeat center center;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .form-section {
+    position: relative;
+    background: url('images/free-fire-portada1.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .form-section h1 {
+    text-align: center;
+    color: #fafafa;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px;
+  }
+  
+  .form-content {
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(255, 0, 0, 0.5), /* Red glow */
+                0 0 15px rgba(255, 255, 0, 0.5), /* Yellow glow */
+                0 0 20px rgba(0, 0, 255, 0.5), /* Blue glow */
+                0 0 25px rgba(0, 255, 0, 0.5), /* Green glow */
+                0 0 30px rgba(128, 0, 0, 0.5); /* Maroon glow */
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    animation: glow-animation 2s infinite; /* Glow animation */
+  }
+  
+  @keyframes glow-animation {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 15px rgba(255, 0, 0, 0.5);
+    }
+    25% {
+        box-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 15px rgba(255, 255, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5), 0 0 15px rgba(0, 0, 255, 0.5);
+    }
+    75% {
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 15px rgba(0, 255, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(128, 0, 0, 0.5), 0 0 15px rgba(128, 0, 0, 0.5);
+    }
+  }
+  
+  .form-content h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #e0e0e0; /* Light color for contrast */
+  }
+  
+  .form-content form {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .form-content label {
+    font-weight: 500;
+    color: #e0e0e0; /* Light color for contrast */
+  }
+  
+  .form-content input {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #333; /* Light border for better visibility */
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+  }
+  
+  .form-content button {
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6f61, #ffbc03); /* Gradient background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Basic shadow */
+  }
+  
+  .form-content button:hover {
+    background: linear-gradient(135deg, #ff4f2f, #ff9a00); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .form-content button:active {
+    background: linear-gradient(135deg, #e63e3e, #e88a00); /* Even darker gradient on click */
+    transform: scale(1); /* Reset zoom effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Basic shadow */
+  }
+  

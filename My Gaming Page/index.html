@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Free Fire</h1>
+        </header>
+        <section class="image-gallery">
+            <img src="images/p2.jpg" alt="Image 1">
+            <img src="images/788e2470a8c4c11872cbf731bfb03a89.jpg" alt="Image 2">
+            <img src="images/18173.jpg" alt="Image 3">
+        </section>
+        <section class="guild-info">
+            <h2>Guild Details</h2>
+            <form id="guild-form">
+                <label for="game-name">Game Name:</label>
+                <input type="text" id="game-name" value="Free Fire" readonly>
+                
+                <label for="game-id">Game ID:</label>
+                <input type="text" id="game-id" value="12345689" readonly>
+                <button type="button" onclick="copyGameId()">Copy ID</button>
+                
+                <label for="guild-name">Guild Name:</label>
+                <input type="text" id="guild-name" value="End Gaming" readonly>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
